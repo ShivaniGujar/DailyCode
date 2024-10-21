@@ -1,0 +1,9 @@
+package JavaDemo;
+
+public class LogicalOperatorNOT {
+	public static void main(String []args) {
+		System.out.println( ! true);//false
+		System.out.print(! false);//true
+	}
+	
+}
