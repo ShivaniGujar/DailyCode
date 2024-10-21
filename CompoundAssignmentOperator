@@ -1,0 +1,42 @@
+package JavaDemo;
+
+public class CompoundAssignmentOperator {
+
+	public static void main(String args[])   
+	{  
+	int x = 25;  
+	int y = 13;  
+	int z = 0;  
+	z = x + y;  
+	System.out.println("z = x + y = " + z );  
+	z += x ;  
+	System.out.println("z += x  = " + z );  
+	z -= x ;  
+	System.out.println("z -= x = " + z );  
+	z *= x ;  
+	System.out.println("z *= x = " + z );  
+	x = 34;  
+	z = 17;  
+	z /= x ;  
+	System.out.println("z /= x = " + z );  
+	x = 12;  
+	z = 17;  
+	z %= x ;  
+	System.out.println("z %= x  = " + z );  
+	z <<= 1 ;  
+	System.out.println("z <<= 2 = " + z );  
+	z >>= 1 ;  
+	System.out.println("z >>= 2 = " + z );  
+	z >>= 1 ;  
+	System.out.println("z >>= 2 = " + z );  
+	z &= x ;  
+	System.out.println("z &= x  = " + z );  
+	z ^= x ;  
+	System.out.println("z ^= x  = " + z );  
+	z |= x ;  
+	System.out.println("z |= x  = " + z );  
+	short s = 300;  
+	s >>>= 4;  
+	System.out.println("s>>>= 4 = "+s);  
+	}  
+	}  
