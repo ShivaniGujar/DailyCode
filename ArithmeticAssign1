@@ -1,0 +1,38 @@
+
+/*Write a program to display the population for  next
+ * five year.Assume the current population is 312,032,486 and one year has 365
+ * one birth every year 7 seconds
+ * one death every 13 seconds
+ * one new immigrant every 45 seconds
+ **/
+
+package JavaDemo;
+
+public class ArithmeticAssign1 {
+
+	 public static void main(String[] args) {
+	        // Constants
+	        int currentPopulation = 312_032_486;
+	        int secondsInAYear = 365 * 24 * 60 * 60;
+	        
+	        // Rates based on the assumptions
+	        int birthRate = 7;          // One birth every 7 seconds
+	        int deathRate = 13;         // One death every 13 seconds
+	        int immigrantRate = 45;     // One new immigrant every 45 seconds
+	        
+	        // Population change per year
+	        int birthsPerYear = secondsInAYear / birthRate;
+	        int deathsPerYear = secondsInAYear / deathRate;
+	        int immigrantsPerYear = secondsInAYear / immigrantRate;
+	        
+	        // Calculate net population growth per year
+	        int netGrowthPerYear = birthsPerYear + immigrantsPerYear - deathsPerYear;
+	        
+	        System.out.println("Yearly Population Projection:");
+	        for (int i = 1; i <= 5; i++) {
+	            currentPopulation += netGrowthPerYear;
+	            System.out.println("Year " + i + ": " + currentPopulation);
+	        }
+	    }
+
+}
