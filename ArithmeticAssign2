@@ -1,0 +1,22 @@
+/*Write a program to display the area and perimeter of a circle
+ *  that has radius of 5.5 using the following formula
+ *   perimeter = 2 *3.14 * radius
+ *   area 2*3.14 * radius *radius
+ * */
+package JavaDemo;
+
+public class ArithmeticAssign2 {
+
+	public static void main(String[] args) {
+		
+		 double radius=5.5;
+		 final double pie=3.14;
+		 double area = 2 * pie * radius *radius;
+		 double perimeter = 2 * pie* radius;
+		 
+		 System.out.println("Area of circle: "+ area);
+		 System.out.println("Perimeter of circle: "+ perimeter); 
+		
+	}
+
+}
