@@ -1,0 +1,28 @@
+/*Assign4:Assume a runner runs 14 kilometers in 45 and 30 seconds.
+ * WAP to display average speed in miles per hour.
+ * Note : 1 mile equal to 1.6 kilometers
+ * */
+package JavaDemo;
+
+public class ArithmeticAssign4{
+	 public static void main(String[] args) {
+	      // Distance in kilometers
+	      double distanceInKm = 14.0;
+
+	      // Time in minutes and seconds
+       int minutes = 45;
+       int seconds = 30;
+
+     // Convert distance from kilometers to miles
+	 double distanceInMiles = distanceInKm * 0.621371;
+
+	 // Convert total time to hours
+	 double totalTimeInHours = (minutes * 60 + seconds) / 3600.0;
+	        
+     // Calculate speed in miles per hour
+	  double speedInMilesPerHour = distanceInMiles / totalTimeInHours;
+
+     // Display the result
+     System.out.println("Avg speed in miles per hour:\n " + speedInMilesPerHour);
+	    }
+}
