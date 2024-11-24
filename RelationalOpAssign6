@@ -1,0 +1,18 @@
+/*WAP to find/check whether the number is digit or not*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class RelationalOpAssign6 {
+			public static void main(String[] args) {
+				Scanner sc= new Scanner(System.in);
+				System.out.print("Enter Character: ");
+	        char ch = sc.next().charAt(0); // Example character
+
+	        // Relational check
+	        int result = (ch >= '0' && ch <= '9') ? 1 : 0;
+
+	        // Print result
+	        System.out.println("Is the character '" + ch + "' a digit? " + (result == 1 ? "Yes" : "No"));
+	    }
+}
