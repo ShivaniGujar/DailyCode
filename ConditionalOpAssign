@@ -1,0 +1,26 @@
+/*Q2. Physics: finding runway length
+ * Given an airplane acceleration a and take off speed v, 
+ * you can compute the minimum runway length needed for an airplane
+ * to take off using the following formula
+ * length= v2/ 2a
+ * WAP that prompt the user to enter v in meter/second(m/s)
+ * and the accelaration in (m per second square) and dispay minimum runway length
+ * ex: minimum speed and acceleration: 60 3.5 ,minimum length of this runway is 514.286
+ * */
+package JavaDemo;
+import java.util.Scanner;
+public class ConditionalOpAssign3 {
+
+	public static void main(String[] args) {
+		System.out.print("Enter Velocity and acceleation:");
+		Scanner sc= new Scanner(System.in);
+		double speed= sc.nextDouble();
+		double acceleration= sc.nextDouble();
+		
+		double length= (speed * speed) /(2*acceleration);
+		System.out.println("The minimum runway length for this airplane is: "+length);
+		
+				
+	}
+
+}
