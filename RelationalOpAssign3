@@ -1,0 +1,19 @@
+/*WAP to find Largest number among 2*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class RealationalOpAssign3 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter 2 number:");
+		int num1=sc.nextInt();
+		int num2=sc.nextInt();
+		int max = (num1 < num2) ? num2 : num1;
+		System.out.print(num1+","+num2 + " Largest among the two number is: "+max);
+		
+
+	}
+
+}
