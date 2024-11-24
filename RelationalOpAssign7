@@ -1,0 +1,21 @@
+/*WAP to find the character is alphabet 
+ * and check is uppercase alphabet or lowercase alphabet*/
+package JavaDemo;
+import java.util.Scanner;
+public class RelationalOpAssign7 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the Character:");
+		char ch=sc.next().charAt(0);
+		
+System.out.println((((ch >='A' && ch <='Z') || (ch >='a' && ch<='z')) ?ch+" is Alphabet" : ch+"Not Aplhabet"));
+
+System.out.println  ( ( ch>='A'&& ch <='Z') ? ch+" is Uppercase" : ch+ " in Lowercase");
+		
+		
+
+	}
+
+}
