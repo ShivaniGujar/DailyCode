@@ -1,0 +1,31 @@
+/*Q6:Cost of driving
+ * WAP that prompt the user to enter the distance to drive, the fuel
+ * efficiency of the car in miles per gallon and the price per
+ * gallon and display the cost of trip
+ * ex:Enter driving distance: 900.5 
+ * Enter Miles per gallon: 25.5,
+ * Enter price per gallon: 3.55
+ * the cost of driving is: 125.36
+ * */
+
+package JavaDemo;
+import java.util.Scanner;
+
+public class ConditionalOpAssign7 {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter driving distance: ");
+	double distance=sc.nextDouble();
+	
+	System.out.println("Enter Miles per gallon: ");
+	double mile=sc.nextDouble();
+	
+	System.out.println("Enter price per gallon: ");
+	double price=sc.nextDouble();
+
+	double Cost=(distance/mile)*price;
+	System.out.print("the cost of driving is: "+Cost);
+		}
+
+}
