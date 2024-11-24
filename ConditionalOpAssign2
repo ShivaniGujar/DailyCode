@@ -1,0 +1,33 @@
+/*Q1: Science Calculation Energy
+ * write a program that calculates the energy needed to head to heat water
+ * from a initial temp to a final temperature. Your program should prompt 
+ * the user to enter the amount of water in kilogram and the initial and final
+ * temperature of the water. The formula of compute the energy:
+ *  Q = M * (finalTemperature -initialTemperature) * 4184; 
+ *  where M is weight of water in kilogram, temperature are degree celcius, and
+ *  energy Q is measured in joules  .
+ *  water in kg==55.5 ,  initial temp=3.5, final temp=10.5 */
+
+package JavaDemo;
+import java.util.Scanner;
+
+public class ConditionalOpAssign2 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the amount of water in kilogram :");
+		Scanner sc=new Scanner(System.in);
+		double weightWater= sc.nextDouble();
+		
+		System.out.println("Enter the initial temperature :");
+		double initialTemp=sc.nextDouble();
+		
+		System.out.println("Enter the final temperature :");
+		double finalTemp=sc.nextDouble();
+		
+		double energy=  weightWater * (finalTemp -initialTemp) * 4184;
+		System.out.println("The energy needed is :"+energy+"Joules");
+		
+
+	}
+
+}
