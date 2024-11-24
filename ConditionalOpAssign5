@@ -1,0 +1,27 @@
+/*Q4 Geometry: Area of Hexagon
+ * WAP that prompt the user to enter the side of hexagon 
+ * and display the area. The formula to computing 
+ * area of hexagon is
+ * Area= 3 
+ * ex: enter the side:5.5
+ * The area of hexagon=78.5895*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ConditionalOpAssign5 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the length of a side of the hexagon:");
+		double side=sc.nextDouble();
+		
+		//double area= (3 * Math.sqrt(3)/2 )* (side *side);
+		double area= (3 * Math.sqrt(3)/2 )* Math.pow(side, 2);
+		System.out.println("The area of hexagon is: "+area);
+		
+		
+	}
+
+}
