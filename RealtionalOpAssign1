@@ -1,0 +1,16 @@
+/*WAP to find user enter number even or odd*/
+package JavaDemo;
+import java.util.Scanner;
+
+public class RelationalOpAssign1 {
+	public static void main(String arg[]) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num=sc.nextInt();
+		
+		System.out.println((num % 2==0)? "Number is Even": "Number is ODD");
+		
+		
+	}
+
+}
