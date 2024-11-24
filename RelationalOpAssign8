@@ -1,0 +1,18 @@
+/*WAp to check user entered character is vowel or consonent */
+package JavaDemo;
+import java.util.Scanner;
+
+public class RelationalOpAssign8 {
+
+	public static void main(String[] args) {
+		System.out.print("Enter the character: ");
+		Scanner sc = new Scanner(System.in);
+		char ch= sc.next().charAt(0);
+		
+System.out.print((ch=='a' || ch=='e'|| ch=='i' ||ch=='o' || ch=='u'||
+				 ch=='A' || ch=='E'|| ch=='I' ||ch=='O' || ch=='U')?
+				 ch+ " is vowel" :
+				ch+ " is consonent");
+	}
+
+}
