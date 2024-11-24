@@ -1,0 +1,31 @@
+/*Q3: Health Application: Computing BMI
+ * Body mass Idex(BMI) is a measure of health on weight.
+ * It can be calculated by taking your weight in kilograms and dividing 
+ * by the square of your height in meter.
+ * WAP to prompt the user to enter a weight in pound and height in inches and display BMI
+ * note 1 pound=0.45359237 kilogram, one inch is 0.0254
+ * ex: enter weight in pound: 95.5
+ * enter height inch 50
+ * BMI is 26.8573
+ * */
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ConditionalOpAssign4 {
+
+	public static void main(String[] args) {
+		double OnePound= 0.45359237;
+		double OneInch=0.0254;
+		System.out.print("Enter weight and height:");
+		Scanner sc= new Scanner(System.in);
+	   double weight=sc.nextDouble();
+	   double height= sc.nextDouble();
+	   double w1= OnePound *weight;
+	   double h1=OneInch * height;
+	   double BMI= w1 / (h1 * h1);
+	   System.out.println("BMI is :"+BMI);
+		
+	}
+
+}
