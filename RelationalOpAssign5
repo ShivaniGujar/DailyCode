@@ -1,0 +1,20 @@
+/*WAP to check whether the character is alphabet or not*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class RelationalOpAssign5 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter Character: ");
+		char ch= sc.next().charAt(0);//takes a single character as input using
+		
+		
+	System.out.println(((ch >='A' && ch <='Z') 
+					|| (ch>= 'a' && ch <='z'))
+					? "alphabet" : "Not alphabet");
+		
+	}
+
+}
