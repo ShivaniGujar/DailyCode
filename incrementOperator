@@ -1,0 +1,47 @@
+package JavaDemo;
+
+public class IncrementOperator {
+
+	public static void main(String[] args) {
+		System.out.print("First: ");
+		int a=2;
+		int b=a++;//2(3)
+		int c=++a;//3,4(4)    4     2(3)   4(5)
+		System.out.println( a   +  ++b +  ++c);// 4+3+5= 12
+		
+	//	int a=2 ;//Duplicate local variable a
+		System.out.print("Second: ");
+		int d=2;
+		int e=++d;//2 (3)   3(4)     3(4)  
+		System.out.println( ++e    +  ++d);//8
+		
+		System.out.print("Third : ");
+		int p=3;
+		int q=p++;//3 assign to q and p=4
+		int r=p++;// 4 assign to r and p=5
+		                 //5(6)  3(4)  5(6)  4   4(5)  6(7)
+		System.out.println(p++ + q++ + r++ + p + q++ + r++);//5+3+5+4+4+6=27
+		
+		System.out.print("Fourth : ");
+		int x=4;
+		int y=3;         //4(5)  5   3(4)   5    4
+		System.out.println(x++ + x + y++  + x + y);//4+5+3+5+4=21
+			
+		System.out.print("Fifth : ");
+		int j=2;
+		int k=j;//2
+		int l=k++;//l=2,k=3
+		///                2(3)   3(4)  2(3)  3  4    3
+		System.out.println(j++ +  k++ + l++ + j + k + l );//2+3+2+3+4+3=17
+		
+		
+		System.out.print("Sixth : ");
+		int m=4;
+		int n=m++;//n=4,m=5
+		int o=m;//o=5
+		               //5+4+5
+		System.out.print(m+n+o);//14
+			
+	}
+
+}
