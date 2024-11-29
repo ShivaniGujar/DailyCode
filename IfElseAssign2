@@ -1,0 +1,22 @@
+/* WAP to check the user entered percentage is 
+ * eligible for appearing the interview or not 
+ * NOTE: If percentage is above 60 then 
+ * eligible and if percentage is below 60 
+   student not eligible*/
+package JavaDemo;
+import java.util.Scanner;
+
+public class IfElseAssign2 {
+	public static void main(String args[]) {
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter the Percentage: ");
+		Double percentage= sc.nextDouble();
+		if(percentage>=60) {
+			System.out.println("Student is eligible for interview!");
+		}
+		else {
+			System.out.println("Student is not eligible for interview!");
+		}
+	}
+
+}
