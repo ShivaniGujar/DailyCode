@@ -1,0 +1,30 @@
+/*WAP that increases the pay of employee by 
+ * 3% if his monthly target score is greater
+ * than 90 %,otherwise increases pay by 1%*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class IfElseAssign1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your score: ");
+        double score = sc.nextDouble();
+
+        System.out.print("Enter your pay: ");
+        double pay = sc.nextDouble();
+
+        if (score > 90) {
+            pay = pay + (pay * 3.0 / 100);
+            System.out.println("Increased payment by 3%: " + pay);
+        } else {
+            pay = pay + (pay * 1.0 / 100);
+            System.out.println("Increased payment by 1%: " + pay);
+        }
+
+        sc.close();
+    }
+}
+
+
