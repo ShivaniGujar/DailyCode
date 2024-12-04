@@ -1,0 +1,23 @@
+/* Write a program to check if the user entered number is Even or Odd*/
+package JavaDemo;
+import java.util.Scanner;
+
+public class IfElseAssign3 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner (System.in);
+		
+		System.out.println("Enter the number:");
+		int num=sc.nextInt();
+		if(num %2 ==0) {
+			System.out.print("Number is even");
+		}else {
+			System.out.print("Number is Odd");
+		}
+		
+		
+		
+
+	}
+
+}
