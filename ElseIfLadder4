@@ -1,0 +1,21 @@
+package JavaDemo;
+
+public class ElseIfLadder4 {
+	public static void main(String[] args) {
+
+		if(true) {
+			System.out.println("Hi from if block");//output
+		}else if(true) {
+			System.out.println("Hi from else if block");
+		}else if(true) {
+			System.out.println("Hi from elseif block");
+		}else {
+			System.out.println("Hi from else block");
+	}
+		
+
+	}
+
+
+}
+4
