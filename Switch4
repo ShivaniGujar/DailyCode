@@ -1,0 +1,23 @@
+///Duplicate Case
+package JavaDemo;
+
+public class Switch4 {
+	public static void main(String[] args) {
+		byte a=1;
+		switch(1+0) {
+		case 1: System.out.println("Hi from case 1");
+				break;
+		case 2: System.out.println("Hi from case 2");
+				break;
+		case 'A': System.out.println("Hi from case 3");
+				break;
+		case 65: System.out.println("Hi from case 4");
+				break;
+		case 128: System.out.println("Hi from case 5");
+				break;
+		default: System.out.println("Hi from default case");
+		}
+	}
+
+
+}
