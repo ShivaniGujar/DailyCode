@@ -1,0 +1,22 @@
+package JavaDemo;
+
+public class Switch5 {
+	public static void main(String[] args) {
+		byte a=66;
+		switch(a+0) {
+		case 1: System.out.println("Hi from case 1");
+				break;
+		case 2: System.out.println("Hi from case 2");
+				break;
+		case 'b': System.out.println("Hi from case 3");
+				break;
+		case 'B': System.out.println("Hi from case 4");//output
+				break;
+		case 128: System.out.println("Hi from case 5");
+				break;
+		default: System.out.println("Hi from default case");
+		}
+	}
+
+
+}
