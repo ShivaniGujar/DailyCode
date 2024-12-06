@@ -1,0 +1,56 @@
+//WAP to display the month based on the user entered number
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class BreakDemo {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the month number:");
+		int num=sc.nextInt();
+		switch(num) {
+		case 1:
+			System.out.print("1 means January");
+			break;
+		case 2:
+			System.out.print("2 means February");
+			break;
+		case 3:
+			System.out.print("2 means March");
+			break;
+		case 4:
+			System.out.print("4 means April");
+			break;
+		case 5:
+			System.out.print("5 means May");
+			break;
+		case 6:
+			System.out.print("6 means June");
+			break;
+		case 7:
+			System.out.print("7 means July");
+			break;
+		case 8:
+			System.out.print("8 means August");
+			break;
+		case 9:
+			System.out.print("9 means September");
+			break;
+		case 10:
+			System.out.print("10 means October");
+			break;
+		case 11:
+			System.out.print("11 means November");
+			break;
+		case 12:
+			System.out.print("12 means December");
+			break;
+		default: 
+			System.out.print("Enter correct month");
+			break;
+		}
+
+	}
+
+}
