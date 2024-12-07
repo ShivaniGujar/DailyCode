@@ -1,0 +1,51 @@
+package JavaDemo; // Defines the package name for this Java file.
+
+public class JavaSwitchEnumExample {
+    // Declaring an enum named 'Day' to represent days of the week.
+    public enum Day {  
+        Sun, Mon, Tue, Wed, Thu, Fri, Sat  // Enum constants for each day of the week.
+    }    
+
+    public static void main(String args[]) {    
+        // Using the `values()` method of the enum to get an array of all constants.
+        Day[] DayNow = Day.values();    
+
+        // Enhanced for loop to iterate through each value of the Day enum.
+        for (Day Now : DayNow) {    
+            // Using a switch-case statement to check the current enum value.
+            switch (Now) {    
+                case Sun: // If the current value is 'Sun', execute this block.
+                    System.out.println("Sunday"); // Print "Sunday".
+                    break; // Exit the switch statement.
+                case Mon: // If the current value is 'Mon', execute this block.
+                    System.out.println("Monday"); // Print "Monday".
+                    break;    
+                case Tue: // If the current value is 'Tue', execute this block.
+                    System.out.println("Tuesday"); // Print "Tuesday".
+                    break;         
+                case Wed: // If the current value is 'Wed', execute this block.
+                    System.out.println("Wednesday"); // Print "Wednesday".
+                    break;    
+                case Thu: // If the current value is 'Thu', execute this block.
+                    System.out.println("Thursday"); // Print "Thursday".
+                    break;    
+                case Fri: // If the current value is 'Fri', execute this block.
+                    System.out.println("Friday"); // Print "Friday".
+                    break;    
+                case Sat: // If the current value is 'Sat', execute this block.
+                    System.out.println("Saturday"); // Print "Saturday".
+                    break;    
+            }    
+        }    
+    }    
+}
+
+
+Output:
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
