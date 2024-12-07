@@ -1,0 +1,21 @@
+//A year is leap, if it is divisible by 4 and 400. But, not by 100.
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class IfElseLeapYear {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Year: ");
+		int year=sc.nextInt();
+		if((year % 4==0 || year % 400==0 || year % 100 != 0)) {
+			System.out.println(year+ " year is Leap year");
+		}
+		else {
+			System.out.println(year+ " year is  not Leap year");
+		}
+
+	}
+
+}
