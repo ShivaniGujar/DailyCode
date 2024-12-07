@@ -1,0 +1,53 @@
+package JavaDemo;
+import java.util.Scanner;  
+public class JavaBreak {  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        int number;  
+        // Using break in a for loop  
+        System.out.println("Using break in a for loop:");  
+        for (int i = 1; i <= 5; i++) {  
+            System.out.print("Enter a number (or -1 to exit): ");  
+            number = scanner.nextInt();  
+            // Check if the user wants to exit the loop  
+            if (number == -1) {  
+                // If the user wants to exit, break out of the loop  
+                break;  
+            }  
+            // If the user doesn't want to exit, display the number  
+            System.out.println("You entered: " + number);  
+        }  
+        // Using break in a while loop  
+        System.out.println("\nUsing break in a while loop:");  
+        int i = 1;  
+        while (i <= 5) {  
+            System.out.print("Enter a number (or -1 to exit): ");  
+            number = scanner.nextInt();  
+            // Check if the user wants to exit the loop  
+            if (number == -1) {  
+                // If the user wants to exit, break out of the loop  
+                break;  
+            }  
+            // If the user doesn't want to exit, display the number  
+            System.out.println("You entered: " + number);  
+            i++;  
+        }  
+        // Using break in a do-while loop  
+        System.out.println("\nUsing break in a do-while loop:");  
+        i = 1;  
+        do {  
+            System.out.print("Enter a number (or -1 to exit): ");  
+            number = scanner.nextInt();  
+            // Check if the user wants to exit the loop  
+            if (number == -1) {  
+                // If the user wants to exit, break out of the loop  
+                break;  
+            }  
+            // If the user doesn't want to exit, display the number  
+            System.out.println("You entered: " + number);  
+            i++;  
+        } while (i <= 5);  
+        // Close the scanner  
+        scanner.close();  
+    }  
+}  
