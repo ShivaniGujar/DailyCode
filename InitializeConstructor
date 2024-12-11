@@ -1,0 +1,24 @@
+class Student {  
+    int id;  
+    String name;  
+    // Constructor with parameters  
+    public Student(int id, String name) {  
+        this.id = id;  
+        this.name = name;  
+    }  
+    // Method to display student information  
+    public void displayInformation() {  
+        System.out.println("Student ID: " + id);  
+        System.out.println("Student Name: " + name);  
+    }  
+}  
+public class ObjectConstructor {  
+    public static void main(String[] args) {  
+        // Creating objects of Student class with constructor  
+        Student student1 = new Student(1, "John Doe");  
+        Student student2 = new Student(2, "Jane Smith");  
+        // Displaying information of the objects  
+        student1.displayInformation();  
+        student2.displayInformation();  
+    }  
+}  
