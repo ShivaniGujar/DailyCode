@@ -1,0 +1,44 @@
+package JavaDemo;
+import java.util.Scanner;
+
+//WAP to enter month and display the season
+public class SwitchMonthSeason {
+	public static void main(String ...arg) {
+		System.out.println("Enter Month");
+		Scanner sc=new Scanner(System.in);
+		String month=sc.next().toUpperCase();
+	
+		
+		switch(month){
+		case "OCT":
+		case "NOV":
+		case "DEC":
+		case "JAN":
+			System.out.print(month+" is a winter");
+			break;
+		
+		case "feb":
+		case "MAR":
+		case "APR":
+		case "MAY":
+			System.out.print(month+" is a Summer");
+			break;	
+			
+		case "JUN":
+		case "JUL":
+		case "AUG":
+		case "SEP":
+			System.out.print(month+" is a Rainy");
+			break;
+			
+			
+			default:
+			
+				System.out.print(" Invalid input");
+				break;
+		}
+		
+		
+	}
+
+}
