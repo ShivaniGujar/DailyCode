@@ -1,0 +1,25 @@
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class SwitchVowelConsonant {
+
+	public static void main(String[] args) {
+		System.out.print("Enter character: ");
+		Scanner sc=new Scanner(System.in);
+		char ch=sc.next().toLowerCase().charAt(0);
+		
+		switch(ch) {
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			System.out.print(ch+ " is Vowel");
+			break;
+		default: System.out.print(ch+ " is consonant");
+		}
+		
+	}
+
+}
