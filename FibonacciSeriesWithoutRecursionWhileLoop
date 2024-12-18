@@ -1,0 +1,26 @@
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class FibonacciSeriesWithoutRecursionWhileLoop {
+	public static void main(String[] args) {
+		
+		System.out.print("Enter number to count Fibonacci Series:");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int a=0,b=1,c;
+		
+		
+		while(num>0) {
+			System.out.print(a+" ");
+			c=a+b;
+			a=b;
+			b=c;
+			num--;	
+			
+		}
+		
+		
+		}
+
+}
