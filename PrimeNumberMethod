@@ -1,0 +1,36 @@
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class PrimeNumberMethod {
+
+    // Method to check if a number is prime
+    static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false; // Numbers <= 1 are not prime
+        }
+
+        // Check divisors from 2 to sqrt(num)
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false; // Found a divisor, not prime
+            }
+        }
+        return true; // No divisors found, number is prime
+    }
+
+    public static void main(String[] args) {
+        System.out.print("Enter the number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        // Call the isPrime method and print the result
+        if (isPrime(num)) {
+            System.out.println(num + " is a prime number.");
+        } else {
+            System.out.println(num + " is not a prime number.");
+        }
+
+        sc.close(); // Close the scanner to release resources
+    }
+}
