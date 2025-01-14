@@ -1,0 +1,18 @@
+//WAP to print  1 to 100
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ForOneToTen {
+	public static void main(String arf[]) {
+		System.out.println("Enter Range to print number from 1");
+		Scanner sc=new Scanner(System.in);
+		int range=sc.nextInt();
+		
+		for(int i=1;i<=range;i++) {
+			System.out.println(i+" ");
+		}
+		
+	}
+
+}
