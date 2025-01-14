@@ -1,0 +1,60 @@
+/*WAp to print Upparcase A to Z ,lowercase a-z 
+and 0-9 digits ascending and descending order*/
+package JavaDemo;
+
+public class ForAlphabetPrint {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Acending Order: ");
+		
+		//Ascending Order A to Z
+		for(char ch='A'; ch<='Z';ch++) {
+			System.out.print(ch+" ");
+		}
+		System.out.println();
+		
+		///Ascending order a to z
+		for (char ch='a';ch<='z';ch++) {
+			System.out.print(ch+" ");
+		}
+		/*above code also write as
+		 * for(char ch=97; ch<=122;ch++) {
+			System.out.print(ch+" ");
+		}
+		 * */
+		System.out.println();
+		// o to 9
+		for(char ch=48;ch<=57;ch++) {
+				System.out.print(ch+" ");
+			
+		}
+		System.out.println();
+		System.out.println();
+		
+		System.out.println("Descending Order");
+		//descending Order A to Z
+		for(char ch='Z';ch>='A';ch--)
+		{
+			System.out.print(ch+" ");
+		}
+		System.out.println();
+		
+		//descending order a to z
+		for(char ch=122;ch>=98;ch--) {
+			System.out.print(ch+" ");
+		}
+		System.out.println();
+		
+		
+		//descending order 0 to 9
+		for(char ch=57;ch>=48;ch--) {
+			System.out.print(ch+" ");
+		}
+		System.out.println();
+		
+		
+		
+	}
+
+}
