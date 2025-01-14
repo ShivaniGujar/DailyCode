@@ -11,16 +11,19 @@ public class Pattern_Triangle2Alpha {
 
 	public static void main(String[] args) {
 		
-	/*Way 1: 
-	 * 	for(char i=97;i<=101;i++)
+ System.out.println("Solution 1:\n");
+		for(char i=97;i<=101;i++)
 		{//rows=i
 			for(char j=97;j<=i;j++) 
 			{//column=j
 				System.out.print(j+" ");
 			}
 			System.out.println();//to next row
-		}*/
+		}
 		
+		
+
+		 System.out.println("\nSolution 2:\n");
 		for(int i=1;i<=5;i++) {
 			char ch='a';
 			for(int j=1;j<=i;j++) {
