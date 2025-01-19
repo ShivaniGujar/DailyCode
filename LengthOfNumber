@@ -1,0 +1,19 @@
+//WAP to print length of a number
+package JavaDemo;
+import java.util.Scanner;
+
+public class LengthOfNumber {
+	public static void main(String args[]) {
+		System.out.println("Enter number:");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int length=0;
+		
+		for(int i=num;i>0;i/=10) {
+			length++;
+		}
+		System.out.print(length);
+		
+	}
+
+}
