@@ -1,0 +1,19 @@
+//WAP to print length of a number using  Do while loop 
+	package JavaDemo;
+	import java.util.Scanner;
+		public class DoWhileLengthOfNumber {
+			public static void main(String args[]) {
+				System.out.println("Enter number:");
+				Scanner sc=new Scanner(System.in);
+				int num=sc.nextInt();
+				int length=0;
+				do {
+					length++;
+					num=num/10;
+				}
+				while(num>0);
+				System.out.println(length);
+			}
+
+		}
+
