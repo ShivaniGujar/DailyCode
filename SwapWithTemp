@@ -1,0 +1,23 @@
+//Swap number with temporary variable
+
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class SwapWithTemp {
+
+	public static void main(String[] args) {
+		System.out.println("Enter num1 and num2: ");
+		Scanner sc=new Scanner(System.in);
+		int num1=sc.nextInt();//10
+		int num2=sc.nextInt();//20
+		int temp;
+		
+		
+		temp=num1;// temp=10
+		num1=num2;//num1=20
+		num2=temp;//num2=10
+		System.out.println("After Swapping num1 is "+num1+" and num2 is "+num2);
+		}
+
+}
