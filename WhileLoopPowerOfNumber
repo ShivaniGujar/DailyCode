@@ -1,0 +1,33 @@
+//WAP to print power of number entered by user using While loop
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class WhileLoopPowerOfNumber {
+
+	public static void main(String[] args) {
+		 Scanner scanner = new Scanner(System.in);
+
+	        // Input: base and exponent
+	        System.out.print("Enter the base number: ");
+	        int base = scanner.nextInt();
+	        System.out.print("Enter the exponent: ");
+	        int exponent = scanner.nextInt();
+
+	        int result = 1;
+	        int counter = 0;
+
+	        // Calculate power using while loop
+//The while loop multiplies the result by the base until the counter equals the exponent
+	        while (counter < exponent) {
+	            result *= base;
+	            counter++;
+	        }
+
+	        // Output the result
+	        System.out.println(base + " raised to the power " + exponent + " is: " + result);
+
+
+	}
+
+}
