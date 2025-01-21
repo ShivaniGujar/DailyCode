@@ -1,0 +1,25 @@
+//Reverse Number using while loop
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ReverseNumberWhileLoop {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the number:");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int rem,sum=0;
+		int temp=num;
+		while(num>0) {
+			rem=num % 10;
+			sum=sum * 10 + rem;
+			num=num / 10;
+		}
+		num=temp;
+		
+		System.out.println("Reverse of "+num+" is "+sum);
+
+	}
+
+}
