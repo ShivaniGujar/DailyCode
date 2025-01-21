@@ -1,0 +1,23 @@
+//Reverse of number using for loop
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ReverseOfNumberForLoop {
+	public static void main(String args[]) {
+		System.out.println("Enter the number:");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int rem,sum=0;
+		int temp=num;
+		for(;num>0;num/=10) {
+			rem=num%10;
+			sum=sum*10 +rem;
+		}
+		num=temp;
+		System.out.println("Reverse of "+num+" is "+sum);
+
+		
+	}
+
+}
