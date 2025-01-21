@@ -1,0 +1,22 @@
+////Sum of digit from 1 to number while loop
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class SumOneToNumberWhileLoop {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the number:");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int i=1,sum=0;
+		while(i<=num) {
+			sum=sum+i;
+			i++;
+			
+		}
+		System.out.println("Sum of Digit from 1 to entered number: "+sum);
+		
+	}
+
+}
