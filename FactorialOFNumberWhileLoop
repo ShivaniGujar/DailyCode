@@ -1,0 +1,21 @@
+
+//factorial of number using while loop
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class FactorialOFNumberWhileLoop {
+
+	public static void main(String[] args) {
+		System.out.print("Enter the number:");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int fact=1,i=1;
+		while(i<=num) {
+			fact=fact*i;
+			i++;
+		}
+		System.out.println("Factorial of "+num+" is: "+fact);
+	}
+
+}
