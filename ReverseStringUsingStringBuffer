@@ -1,0 +1,19 @@
+//Reverse String using StringBuffer
+
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ReverseStringUsingStringBuffer {
+
+    public static void main(String[] args) {
+        System.out.print("Enter the string: ");
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        
+        StringBuffer sb = new StringBuffer(str);
+        System.out.println("Reversed string: " + sb.reverse().toString());
+        
+        sc.close();
+    }
+}
