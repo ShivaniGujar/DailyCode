@@ -1,0 +1,25 @@
+/*WAP to fibonacci series in range*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class FibonacciSeriesRange {
+
+    public static void main(String[] args) {
+        System.out.print("Enter the term: ");
+        Scanner sc = new Scanner(System.in);
+        int term = sc.nextInt();
+
+        // Variables to store Fibonacci numbers
+        int a = 0, b = 1, c;
+        
+        System.out.println("Fibonacci Series without recursion:");
+        for (int i = 1; i <= term; i++) {
+            System.out.print(a + " ");  // Print the current Fibonacci number
+            c = a + b;  // Calculate the next Fibonacci number
+            a = b;      // Update a and b for next iteration
+            b = c;
+        }
+        sc.close();  // Close the scanner
+    }
+}
