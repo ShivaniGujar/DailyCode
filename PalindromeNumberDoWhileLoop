@@ -1,0 +1,31 @@
+//Palindrome number: Reverse of number equal to same number, do while loop
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class PalindromeNumberDoWhileLoop {
+
+    public static void main(String[] args) {
+        System.out.print("Enter the number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int rem, reverse = 0;
+        int temp = num;
+
+        // Reverse the number using a do-while loop
+        do {
+            rem = num % 10;             // Get the last digit
+            reverse = reverse * 10 + rem; // Build the reverse number
+            num = num / 10;             // Remove the last digit
+        } while (num > 0);
+
+        // Check if the original number is equal to the reversed number
+        if (temp == reverse) {
+            System.out.println(temp + " is a palindrome number.");
+        } else {
+            System.out.println(temp + " is not a palindrome number.");
+        }
+
+        sc.close(); // Close the scanner
+    }
+}
