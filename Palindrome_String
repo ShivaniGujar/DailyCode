@@ -1,0 +1,22 @@
+/*Palindrome string */
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class Palindrome_String {
+public static void  main(String arg[]) {
+	
+	System.out.print("Enter string");
+	Scanner sc=new Scanner(System.in);
+	String str=sc.nextLine();
+	String rev="";
+	
+	
+	for(int  i=str.length()-1;i>=0;i--) {
+		rev=rev +str.charAt(i);
+	}
+	System.out.print(str.equals(rev)? "Palindrome String" :"Not palindrome String");
+	
+}
+
+}
