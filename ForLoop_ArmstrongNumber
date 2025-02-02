@@ -1,0 +1,37 @@
+/*Armstrong Number is a number that is equal to the sum of cubes of its digits, ex 153
+	An Armstrong number (also known as a Narcissistic number) is a number that is 
+	equal to the sum of its own digits each raised to the power of the number of 
+	digits.
+	 This definition applies to numbers with any number of digits.
+	*/
+	package JavaDemo;
+
+	import java.util.Scanner;
+
+	public class ForLoop_ArmstrongNumber {
+
+		public static void main(String[] args) {
+			System.out.print("Enter a number: ");
+			Scanner sc=new Scanner(System.in);
+			int num=sc.nextInt();
+			int sum=0,cube=0 ;
+			int temp=num;
+			
+			for(;num>0;num=num/10) {
+				
+				int rem=num % 10;
+				 cube= rem * rem * rem;
+				 sum=sum + cube;
+				
+			}
+			
+			num=temp;
+			if(num==sum) {
+				System.out.print(num +" is Armstrong number");
+			}else {
+				System.out.print(num +" is not Armstrong number");
+			}
+		}
+
+	}
+
