@@ -1,0 +1,19 @@
+//palindrome string using stringBuilder
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class Palindrome_String_StringBuilder {
+    public static void main(String[] args) {
+        System.out.print("Enter a string: ");
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        sc.close(); // Close Scanner after use
+
+        // Using StringBuilder for efficient string reversal
+        String rev = new StringBuilder(str).reverse().toString();
+
+        // Check if palindrome (case-insensitive)
+        System.out.println(str.equalsIgnoreCase(rev) ? "Palindrome String" : "Not a Palindrome String");
+    }
+}
