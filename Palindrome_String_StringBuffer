@@ -1,0 +1,19 @@
+/* check palindrome using stringBuffer*/
+package JavaDemo;
+import java.util.Scanner;
+
+public class Palindrome_String_StringBuffer {
+
+	public static void main(String[] args) {
+		System.out.print("Enter string");
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		
+		StringBuffer sb =new StringBuffer(str);
+	//	String rev=sb.reverse();//This leads to a compilation error because reverse() does not return a String.
+		String rev=sb.reverse().toString();
+		System.out.print(str.equals(rev)? "Palindrome String" :"Not palindrome String");
+
+	}
+
+}
