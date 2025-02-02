@@ -1,0 +1,41 @@
+//WAP to find Krish number up to given range
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class KrishnaaMurthy_StrongNumber_Range {
+
+    public static void main(String[] args) {
+        System.out.println("Enter the range to find Strong Numbers:");
+        Scanner sc = new Scanner(System.in);
+        int range = sc.nextInt();
+        
+        System.out.println("Strong Numbers between 1 and " + range + " are:");
+        
+        // Iterate through each number in the range
+        for (int i = 1; i <= range; i++) {
+            int temp = i; // Store the current number
+            int sum = 0;
+
+            // Calculate the sum of factorials of its digits
+            while (temp > 0) {
+                int rem = temp % 10; // Extract the last digit
+                int fact = 1;
+
+                // Calculate factorial of the digit
+                for (int j = 1; j <= rem; j++) {
+                    fact = fact * j;
+                }
+                sum = sum + fact; // Add factorial to the sum
+                temp = temp / 10; // Remove the last digit
+            }
+
+            // Check if the number is a Strong Number
+            if (sum == i) {
+                System.out.println(i); // Print the Strong Number
+            }
+        }
+        
+        sc.close(); // Close the scanner
+    }
+}
