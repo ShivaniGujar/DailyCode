@@ -1,0 +1,33 @@
+/*A number whose sum of factors (excluding the number itself) is 
+ * equal to the number is called a perfect number e
+ * ex 6= 1 * 2 * 3=6 */
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class PerfectNumber {
+    public static void main(String[] args) {
+        System.out.print("Enter the number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        sc.close();  // Close the scanner to prevent resource leak
+        
+        int sum = 0;
+
+        System.out.print("Factors: ");
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                sum += i;
+                System.out.print(i + " "); // Print factors
+            }
+        }
+
+        System.out.println(); // Move to the next line
+
+        if (num == sum) {
+            System.out.println(num + " is a Perfect Number.");
+        } else {
+            System.out.println(num + " is not a Perfect Number.");
+        }
+    }
+}
