@@ -1,0 +1,43 @@
+//Reverse String using recursion
+package JavaDemo;
+
+import java.util.Scanner;
+public class ReverseStringUsingRecursion {
+
+    // Recursive method to reverse a string
+    public static String reverse(String str) {
+        if (str.isEmpty()) {
+            return str; // Base case: if the string is empty, return it
+        }
+        // Recursive call: reverse the rest of the string and append the first character
+        return reverse(str.substring(1)) + str.charAt(0);
+    }
+
+    public static void main(String[] args) {
+        System.out.print("Enter the string: ");
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+
+        String reversedStr = reverse(str); // Call the recursive function
+        System.out.println("Reversed string: " + reversedStr);
+
+        sc.close();
+        /* 
+         * For an input string "hello", here's the step-by-step process:
+
+The string "hello" is passed to the reverse() method.
+reverse("hello") → reverse("ello") + "h"
+reverse("ello") → reverse("llo") + "e"
+reverse("llo") → reverse("lo") + "l"
+reverse("lo") → reverse("o") + "l"
+reverse("o") → reverse("") + "o"
+reverse("") → "" (Base case, returns empty string)
+Now, the string starts to build back up:
+reverse("o") returns "o"
+reverse("lo") returns "ol"
+reverse("llo") returns "oll"
+reverse("ello") returns "olle"
+reverse("hello") returns "olleh"
+*/
+    }
+}
