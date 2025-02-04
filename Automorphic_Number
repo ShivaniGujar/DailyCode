@@ -1,0 +1,28 @@
+/*Automorphic number:An Automorphic Number is a number whose square ends
+ *  with the same digits as the number itself. For example, 
+ * The square of 76 is 5776, and it ends with 76, 
+ * which is the number itself.*/
+package JavaDemo;
+import java.util.Scanner;
+
+public class Automorphic_Number {
+    public static void main(String[] args) {
+        System.out.print("Enter a number to check if it is Automorphic or not: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        sc.close(); // Close scanner to avoid resource leak
+
+        int square = num * num; // Compute square of the number
+
+        // Convert numbers to strings to check suffix match
+        String numStr = String.valueOf(num);//This method converts the num (which is an integer) to its string representation.
+        String squareStr = String.valueOf(square);
+
+        // Check if square ends with the number
+        if (squareStr.endsWith(numStr)) {// checks if a string ends with the specified suffix.
+            System.out.println(num + " is an Automorphic Number.");
+        } else {
+            System.out.println(num + " is not an Automorphic Number.");
+        }
+    }
+}
