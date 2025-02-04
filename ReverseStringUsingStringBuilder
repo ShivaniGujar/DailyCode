@@ -1,0 +1,18 @@
+//Reverse String using StringBuilder
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class ReverseStringUsingStringBuilder {
+
+    public static void main(String[] args) {
+        System.out.print("Enter the string: ");
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        
+        StringBuilder sb = new StringBuilder(str);
+        System.out.println("Reversed string: " + sb.reverse().toString());
+//toString() method, which converts the content of the StringBuffer or StringBuilder object to a regular String.
+        sc.close();
+    }
+}
