@@ -1,0 +1,48 @@
+	/*A Tech number is a number that can be split into two halves, 
+	 * and the sum of the squares of each half is equal to the original number.
+	 * Tech numbers are only valid when the number of digits is even.
+	For example, 2025 is a Tech number because:
+	•	Split 2025 into 20 and 25.
+	•	20² + 25² = 400 + 625 = 1025, which is the same as 2025.
+	*/package JavaDemo;
+import java.util.Scanner;
+
+public class Tech_Number {
+
+    public static void main(String[] args) {
+        System.out.print("Enter the number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int dup = num;  // Store the original number
+        sc.close();  // Close the scanner to prevent resource leak
+        
+        int length = 0;
+        while (num > 0) {
+            length++;
+            num /= 10;
+        }
+
+        // Check if length is even, if not, it's not a Tech number
+        if (length % 2 == 0) {
+            int div = 1;
+            for (int i = 1; i <= length / 2; i++) {
+                div = div * 10;
+            }
+            // Split the number into two halves
+            int firstHalf = dup / div;//20
+            int lastHalf = dup % div;//25
+
+            // Calculate the sum of squares of both halves
+            int sumOfSquares = (firstHalf * firstHalf) + (lastHalf * lastHalf);
+
+            // Check if the sum of squares equals the original number
+            if (sumOfSquares == dup) {
+                System.out.println(dup + " is a Tech number.");
+            } else {
+                System.out.println(dup + " is not a Tech number.");
+            }
+        } else {
+            System.out.println(dup + " is not a Tech number.");
+        }
+    }
+}
