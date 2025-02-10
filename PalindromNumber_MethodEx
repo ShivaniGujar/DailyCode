@@ -1,0 +1,35 @@
+/*WAP to check number is palindrome or not using method
+ * PAlindrome : forword and backword number is same*/
+package JavaDemo;
+
+import java.util.Scanner;
+
+public class PalindromNumber_MethodEx {
+  
+	public static int PalindromeCheck(int num) {
+		int sum=0;
+		while(num>0) {
+			int rem= num % 10;
+			 sum= sum * 10 +rem;
+			num=num /10;
+		}
+		return sum ;
+		
+	}
+	public static void main(String[] args) {
+		System.out.print("Enter number: ");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		
+		int result=PalindromeCheck(num);
+		if(result == num) {
+			System.out.println("Palindrome number");
+			}
+		else {
+			System.out.print("not Palindrome ");	
+		}
+		
+		
+	}
+
+}
