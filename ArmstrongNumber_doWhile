@@ -1,7 +1,7 @@
 /*Armstrong Number is a number that is equal to the sum of cubes of its digits, ex 153
 	An Armstrong number (also known as a Narcissistic number) is a number that is 
 	equal to the sum of its own digits each raised to the power of the number of 
-	digits.
+	digits.  
 	 This definition applies to numbers with any number of digits.
 	*/
 	package JavaDemo;
