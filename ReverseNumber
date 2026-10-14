@@ -1,0 +1,29 @@
+import java.util.*;
+class Solution{
+
+public static int answer(int num){
+	int reverse=0;
+
+	while(num> 0){
+	int digit=num %10;
+	reverse= reverse *10 +digit;
+	num=num/10;
+	}	
+	return reverse;
+	
+}
+
+}
+
+class DailyPractice{
+	public static void main(String args[]){
+	Scanner sc= new Scanner(System.in);
+	int num= sc.nextInt();
+	
+	int result =Solution.answer(num);
+	System.out.println("Reverse number is: "+result);
+
+
+
+	}
+}
