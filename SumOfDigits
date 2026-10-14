@@ -1,0 +1,31 @@
+import java.util.*;
+class Solution{
+
+public static int answer(int num){
+	int sum=0;
+
+	num=Math.abs(num);
+	while(num >0){
+	int digit =num %10 ;
+	sum= sum +digit;
+	num=num/10;
+	}
+
+	return sum;	
+	
+}
+
+}
+
+class DailyPractice{
+	public static void main(String args[]){
+	Scanner sc= new Scanner(System.in);
+	int num= sc.nextInt();
+	
+	int result =Solution.answer(num);
+	System.out.println("Total sum is: "+result);
+
+
+
+	}
+}
