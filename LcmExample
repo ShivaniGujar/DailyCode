@@ -1,0 +1,35 @@
+import java.util.*;
+class Solution{
+public static int gcdFind(int n1,int n2){
+	int candidate=Math.max(n1,n2);
+	while(true){
+	if(candidate %n1 ==0 && candidate % n2==0){
+	return candidate;
+//break;	
+	
+}
+	candidate++;
+	}
+//System.out.println("Least Common multiplier of "+n1+" and "+n2+" is "+candidate);	
+
+ 
+	
+	}
+
+
+
+}
+
+class LcmExample{
+
+	public static void main(String args[]){
+
+	Scanner sc=new Scanner(System.in);
+	int n1=sc.nextInt();
+	int n2=sc.nextInt();
+	//Solution.gcdFind(n1,n2);
+	int result =Solution.gcdFind(n1,n2);
+	
+System.out.println("Greatest Common Divisor of "+n1+" and "+n2+" is "+result);
+	}
+}
