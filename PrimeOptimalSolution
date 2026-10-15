@@ -1,0 +1,34 @@
+import java.util.*;
+class Solution{
+
+public static boolean answer(int num){
+	//handle all negative no also 
+	if(num<2){
+	return false;
+	}
+	
+	for(int i=2;i<=num/i;i++){	
+	 if(num %i==0){
+		return false;
+	}
+	}
+	return true;	
+	
+}
+
+}
+
+class PrimeOptimalSolution{
+	public static void main(String args[]){
+	Scanner sc= new Scanner(System.in);
+	int num= sc.nextInt();
+	boolean result=Solution.answer(num);
+	
+	if(result){
+	System.out.println("Prime Number ");
+	}else{
+
+System.out.println("Not Prime Number ");
+}
+}
+}
