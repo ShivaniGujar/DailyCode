@@ -1,0 +1,28 @@
+import java.util.*;
+class Solution{
+public static int gcdFind(int n1,int n2){
+	//int gcd=1;
+	for(int i= Math.min(n1,n2);i>=1;i--){
+	if(n1 %i ==0 && n2 %i==0){
+		return i;
+	}
+	
+}
+	return 1;
+	
+	}
+
+
+}
+
+class GcdBetterApproach{
+	public static void main(String args[]){
+
+	Scanner sc=new Scanner(System.in);
+	int n1=sc.nextInt();
+	int n2=sc.nextInt();
+
+	int result = Solution.gcdFind(n1,n2);
+	System.out.println("Greatest Common Divisor of "+n1+" and "+n2+" is "+result);
+	}
+}
