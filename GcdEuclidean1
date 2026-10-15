@@ -1,0 +1,32 @@
+import java.util.*;
+class Solution{
+public static int gcdFind(int n1,int n2){
+	int num1=n1,num2=n2;
+	while(n2 !=0){
+
+	int reminder=n1% n2;
+	n1=n2;
+	n2=reminder;
+
+}
+ return n1;
+	//System.out.println("Greatest Common Divisor of "+num1+" and "+num2+" is "+n1);
+	}
+
+
+
+}
+
+class GcdEuclidean{
+
+	public static void main(String args[]){
+
+	Scanner sc=new Scanner(System.in);
+	int n1=sc.nextInt();
+	int n2=sc.nextInt();
+	//Solution.gcdFind(n1,n2);
+	int result =Solution.gcdFind(n1,n2);
+	
+System.out.println("Greatest Common Divisor of "+n1+" and "+n2+" is "+result);
+	}
+}
