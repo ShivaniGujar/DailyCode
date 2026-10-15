@@ -1,0 +1,36 @@
+import java.util.*;
+class Solution{
+
+public static void answer(int start,int end){
+	
+	//outer loop for range
+	for(int num=start;num<=end;num++){
+	//actual working
+	int count=0;
+	for(int i=1;i<=num;i++){
+	if(num % i ==0){
+	count ++;	
+	}
+	}
+if(count==2){
+System.out.println(num);
+}
+	
+	}
+
+
+	}
+
+}
+
+class PrimeRange{
+	public static void main(String args[]){
+	Scanner sc= new Scanner(System.in);
+	int start= sc.nextInt();
+	int end=sc.nextInt();
+	Solution.answer(start,end);
+
+	
+
+}
+}
