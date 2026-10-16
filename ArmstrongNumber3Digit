@@ -1,0 +1,37 @@
+import java.util.*;
+class Solution{
+public int answer(int num){
+	int sum=0,cube;
+	while(num>0){
+	int digit=num %10;
+	cube=digit *digit * digit;
+	sum=sum+cube;
+	num=num/10;
+	}
+	
+	return sum;
+		}
+}
+
+class DailyPractice{
+
+	public static void main(String args[]){
+	Scanner sc=new Scanner(System.in);
+	int num=sc.nextInt();
+	
+	
+
+	Solution dp=new Solution();
+	int result=dp.answer(num);
+	if(num==result){
+	System.out.println("Armstrong Number");
+}else{
+	
+	System.out.println("Not Armstrong Number");
+
+	}
+	
+	
+
+	}
+}	
