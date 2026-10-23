@@ -1,0 +1,59 @@
+//brute force 
+import java.util.*;
+class Solution{
+	public void leftRotateArray(int arr[], int k){
+	int n= arr.length; //Find array length 
+	
+//Handle an empty array
+	if(n==0){
+	return;
+	}
+
+//Reduce the rotation count
+	k=k % n;
+
+//number of rotations
+	for(int r=0;r<k;r++){
+	int first= arr[0];
+
+//shift elements to the left
+	for(int i=0;i<n-1;i++){
+	arr[i]=arr[i+1];
+
+	}
+//Put the first element at the end
+	arr[n-1]=first;
+
+	}
+	
+
+
+}	
+
+}
+class LeftRotateByKPosition{
+public static void  main(String args[]){
+
+	int arr[]=new int[5];
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Array Element: ");
+
+	for(int i=0;i<arr.length;i++){
+		arr[i]=sc.nextInt();
+
+	}
+
+	System.out.println("Enter k position: ");
+	int k=sc.nextInt();
+	
+	Solution s=new Solution();
+	s.leftRotateArray(arr,k);
+	
+
+	for(int i=0;i<arr.length;i++){
+		System.out.print(arr[i]+" ");	
+	}
+
+	}
+
+}
